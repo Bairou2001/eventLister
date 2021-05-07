@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EventLister</title>
+    <link rel="shortcut icon" type="image/jps" href="images/logo-circle.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>Event Lister</header>
+    <main>
+      <div id="searchBar">
+        <form action="" method="get" class="speaker-form">
+          <div class="form-row">
+            <label for="date" id="instructions"
+              >Enter a date and click <b>Search</b> to list all the important
+              events that happened on a specific year or on a certain day! If
+              you want to search for a specific year, simply enter the year
+              (example: <span class="blue">1987</span>). If you want to search
+              for a day of a month, enter <b>month/day</b> (example:
+              <span class="blue">01/26</span>). <br />For example, if you enter
+              1987, events that happened on 1987 will be listed. If you enter
+              01/26, events that happened on a January 26 since the beginning of
+              history will be listed.</label
+            >
+            <input id="date" type="text" placeholder="Example: 1987" />
+          </div>
+          <div class="form-row" id="search-button">Search</div>
+        </form>
+      </div>
+      <div id="results">
+        <div id="results-header">
+          <div id="results-title">Results from Wikipedia</div>
+          <div id="results-credit">
+            (Data fetched using
+            <a href="https://www.mediawiki.org/">MediaWiki API</a> and
+            <a href="https://byabbe.se/on-this-day/"
+              >Wikipedia, On this day API</a
+            >)
+          </div>
+        </div>
+        <div id="result-list">
+          <div class="result">Perform a valid search to display results!</div>
+          <!-- 
+          <div class="result">
+            Result 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div class="result">
+            Result 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <script defer src="script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  min-height: 800px;
+}
+
+@font-face {
+  font-family: myNotoBold;
+  src: url(font/NotoSansKR-Bold.otf);
+}
+
+@font-face {
+  font-family: myNoto;
+  src: url(font/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+  font-family: myNotoLight;
+  src: url(font/NotoSansKR-Light.otf);
+}
+
+body {
+  /*  background-color: rgb(248, 248, 248); */
+  background-color: rgb(233, 233, 233);
+  height: 100%;
+  font-family: myNoto;
+  color: rgb(115, 107, 139);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: max(40px, 4%);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  font-family: myNotoBold;
+  font-size: 3em;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 4px 0 #ccc, 0 2px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+    0 10px 0 #ccc, 0 1px 0 #ccc, 0 1px 0 #ccc, 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.blue {
+  display: inline;
+  color: rgb(90, 90, 196);
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
+
+#search-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 20%;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.form-row {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-button {
+  background-color: rgb(98, 157, 245);
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  color: white;
+}
+
+#search-button:hover {
+  cursor: pointer;
+  background-color: rgb(140, 183, 247);
+}
+
+#search-button:active {
+  transform: translate(-1%, 1px);
+  box-shadow: 2 1rem 2rem rgba(3, 3, 3, 0.15);
+}
+
+#instructions {
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#date {
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+#date:focus {
+  outline: none;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  height: 80%;
+  margin-top: 2%;
+  background-color: rgb(245, 243, 243);
+  overflow: scroll;
+}
+
+#results-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+#results-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#results-credit {
+  font-size: 0.5em;
+}
+
+#result-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.result {
+  background-color: rgb(255, 255, 255);
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-color: grey;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.red {
+  color: rgb(184, 86, 86);
+}
